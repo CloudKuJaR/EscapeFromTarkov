@@ -105,10 +105,10 @@ namespace EscapeFromTarkov.TestSuites
         {
             Page.Menu.OpenRaitingPage();
             Page.RaitingPage.OpenSortByDropDownMenu();
-            Assert.IsTrue(Page.RaitingPage.IsSortOptionContainerPresent());
             Assert.IsTrue(Page.RaitingPage.IsOptionPresent(optionName));
             Page.RaitingPage.ChooseOptionInDropDownMenu(optionName);
- 
+            Assert.IsTrue(Page.RaitingPage.IsRaitingContainsRecords());
+            Assert.IsTrue(Page.RaitingPage.IsAllPlayersHasValidLevel());
             Reporter.test.Log(Status.Pass, "Test Passed");
         }
 

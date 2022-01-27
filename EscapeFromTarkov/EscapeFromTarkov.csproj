@@ -467,6 +467,7 @@
     <Compile Include="Reporter.cs" />
     <Compile Include="TestSettings.cs" />
     <Compile Include="TestSuites\EscapeFromTarkovTests.cs" />
+    <Compile Include="WebDriverExtension\WebDriverExtension.cs" />
     <Compile Include="WebElementExtension\IMyWebElement.cs" />
     <Compile Include="WebElementExtension\MyWebElement.cs" />
   </ItemGroup>
@@ -480,7 +481,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Reports\" />
-    <Folder Include="WebDriverExtension\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="testsettings.json">
