@@ -3,7 +3,7 @@ using OpenQA.Selenium;
 
 namespace EscapeFromTarkov.Pages
 {
-    public class BooksPage : MerchPage
+    public class MerchBooksPage
     {
         private string BOOKS_LOCATOR = "//span[contains(text(),'{0}')][contains(text(),'{1}')]";
         private string BOOK_PRICE_LOCATOR = "//span[contains(text(),'{0}')][contains(text(),'{1}')]//parent::div//parent::div//*[@class='price']";

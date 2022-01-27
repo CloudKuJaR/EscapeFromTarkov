@@ -10,7 +10,5 @@ namespace EscapeFromTarkov.Pages
         private MyWebElement BooksButton => new MyWebElement(By.XPath(BOOKS_BUTTON_LOCATOR));
 
         public void OpenBooksPage() => BooksButton.Click();
-
-        public string GetCurrentUrl() => Driver.driver.Url;
     }
 }

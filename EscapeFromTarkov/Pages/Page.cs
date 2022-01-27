@@ -19,6 +19,16 @@ namespace EscapeFromTarkov.Pages
 
         public static MerchPage MerchPage => GetPage<MerchPage>();
 
-        public static BooksPage BooksPage => GetPage<BooksPage>();
+        public static MerchBooksPage MerchBooksPage => GetPage<MerchBooksPage>();
+
+        public static WikiPage WikiPage => GetPage<WikiPage>();
+
+        public static WeaponWikiPage WeaponWikiPage => GetPage<WeaponWikiPage>();
+
+        public static SupportPage SupportPage => GetPage<SupportPage>();
+
+        public static ErrorPage ErrorPage => GetPage<ErrorPage>();
+
+        public static RaitingPage RaitingPage => GetPage<RaitingPage>();
     }
 }

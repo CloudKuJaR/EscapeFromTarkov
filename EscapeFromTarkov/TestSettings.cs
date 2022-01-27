@@ -12,10 +12,12 @@ namespace EscapeFromTarkov
         public static IConfiguration TestConfiguration { get; } = new ConfigurationBuilder().AddJsonFile("testsettings.json").Build();
 
         public static string BaseUrl { get; set; }
+        public static string SearchText { get; set; }
 
         private static void SetDefaultValues()
         {
             BaseUrl = TestConfiguration["BaseUrl"];
+            SearchText = TestConfiguration["SearchText"];
         }
     }
 }
