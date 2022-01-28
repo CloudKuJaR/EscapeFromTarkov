@@ -15,7 +15,6 @@ namespace EscapeFromTarkov.Pages
         private MyWebElement PlayVideoButton => new MyWebElement(By.XPath(PLAY_VIDEO_BUTTON_LOCATOR));
         private MyWebElement VideoContainer => new MyWebElement(By.XPath(VIDEO_CONTAINER_LOCATOR));
 
-
         public void ClickOnVideo() => Video.Click();
 
         public void PlayVideo() => PlayVideoButton.Click();

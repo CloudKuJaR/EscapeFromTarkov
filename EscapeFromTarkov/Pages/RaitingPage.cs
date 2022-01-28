@@ -10,11 +10,11 @@ namespace EscapeFromTarkov.Pages
         private const string OPTION_LOCATOR = "//li[text()='{0}']";
         private const string RAITING_TABLE_LOCATOR = "//tbody";
         private const string RAITING_NUMBER_LOCATOR = "//td[@class='col-1']";
-        private const string LAST_ELEMENT_IN_TABLE = "(//td[@class='col-5'])[100]";
+        private const string LAST_ELEMENT_IN_TABLE_LOCATOR = "(//td[@class='col-5'])[100]";
 
         private MyWebElement SortByDropDownMenu => new MyWebElement(By.XPath(SORT_BY_DROP_DOWN_MENU_LOCATOR));
         private MyWebElement RatingTable => new MyWebElement(By.XPath(RAITING_TABLE_LOCATOR));
-        private MyWebElement LastElementInTable => new MyWebElement(By.XPath(LAST_ELEMENT_IN_TABLE));
+        private MyWebElement LastElementInTable => new MyWebElement(By.XPath(LAST_ELEMENT_IN_TABLE_LOCATOR));
 
         public void OpenSortByDropDownMenu() => SortByDropDownMenu.Click();
 

@@ -8,7 +8,7 @@ using System.Drawing;
 
 namespace EscapeFromTarkov.WebElementExtension
 {
-    public class MyWebElement
+    public class MyWebElement : IMyWebElement
     {
         private readonly By _by;
         private IWebElement _webElement;
@@ -66,6 +66,7 @@ namespace EscapeFromTarkov.WebElementExtension
                 return false;
             }
         }
+
         private bool IsExists(int timeout, bool shouldExist) => IsExists(TimeSpan.FromMilliseconds(timeout), shouldExist);
 
         public bool IsPresent(int timeout = 3000) => IsExists(timeout, true);
